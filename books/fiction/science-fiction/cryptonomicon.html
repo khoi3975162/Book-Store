@@ -1,0 +1,259 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Nguyen Khoi
+ID: 3975162
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cryptonomicon | Book Store</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .mobile-nav,
+        .img-modal {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="default-nav">
+
+                <a href="/index.html" class="logo">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/books/fiction/fiction.html">Fiction</a></li>
+                    <li><a href="/books/non-fiction/non-fiction.html">Non-Fiction</a></li>
+                    <li><a href="/footer.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+            <a href="#open-mobile-nav">
+                <div class="mobile-nav-icon">☰</div>
+            </a>
+
+            <div id="open-mobile-nav" class="mobile-nav">
+                <a href="#" class="modal-close"></a>
+                <a href="/index.html">Home</a>
+                <a href="/books/fiction/fiction.html">Fiction</a>
+                <a href="/books/non-fiction/non-fiction.html">Non-Fiction</a>
+                <a href="/footer.html">About Us</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="book-page">
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/fiction/fiction.html">Fiction</a></li>
+            <li><a href="/books/fiction/fiction.html">Science Fiction</a></li>
+            <li>Cryptonomicon</li>
+        </ul>
+
+        <section class="book-detail">
+
+            <div class="book-detail-top">
+
+                <div class="book-detail-left">
+                    <a href="#open-modal-0" class="main-img">
+                        <img src="/images/fiction/science-fiction/cryptonomicon/book-cover-cryptonomicon.webp"
+                            alt="book-cover-cryptonomicon">
+                    </a>
+
+                    <div class="sub-imgs">
+                        <a href="#open-modal-1">
+                            <img src="/images/fiction/science-fiction/cryptonomicon/1.png" alt="cryptonomicon-preview1">
+                        </a>
+                        <a href="#open-modal-2">
+                            <img src="/images/fiction/science-fiction/cryptonomicon/2.png" alt="cryptonomicon-preview2">
+                        </a>
+                        <a href="#open-modal-3">
+                            <img src="/images/fiction/science-fiction/cryptonomicon/3.png" alt="cryptonomicon-preview3">
+                        </a>
+                    </div>
+
+                    <div id="open-modal-0" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-3" class="next left">◀</a>
+                        <img src="/images/fiction/science-fiction/cryptonomicon/book-cover-cryptonomicon.webp"
+                            alt="book-cover-cryptonomicon">
+                        <a href="#open-modal-1" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-1" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-0" class="next left">◀</a>
+                        <img src="/images/fiction/science-fiction/cryptonomicon/1.png" alt="cryptonomicon-preview1">
+                        <a href="#open-modal-2" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-2" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-1" class="next left">◀</a>
+                        <img src="/images/fiction/science-fiction/cryptonomicon/2.png" alt="cryptonomicon-preview2">
+                        <a href="#open-modal-3" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-3" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-2" class="next left">◀</a>
+                        <img src="/images/fiction/science-fiction/cryptonomicon/3.png" alt="cryptonomicon-preview3">
+                        <a href="#open-modal-0" class="next right">▶</a>
+                    </div>
+                </div>
+
+                <div class="book-detail-right">
+                    <span class="book-price">$ 17.99</span>
+                    <button type="button" class="add-cart-btn">ADD TO CART</button>
+                </div>
+
+            </div>
+
+            <div class="book-detail-bottom">
+
+                <h2 class="book-name">Cryptonomicon</h2>
+
+                <br>
+
+                <h3 class="book-author">by Neal Stephenson</h3>
+
+                <p class="book-description">
+                    <br>
+                    With this extraordinary first volume in what promises to be an epoch-making masterpiece, Neal
+                    Stephenson hacks into the secret histories of nations and the private obsessions of men, decrypting
+                    with dazzling virtuosity the forces that shaped this century.In 1942, Lawrence Pritchard Waterhouse
+                    - mathematical genius and young Captain in the U.S. Navy - is assigned to detachment 2702. It is an
+                    outfit so secret that only a handful of people know it exists, and some of those people have names
+                    like Churchill and Roosevelt. The mission of Watrehouse and Detatchment 2702-commanded by Marine
+                    Raider Bobby Shaftoe-is to keep the Nazis ignorant of the fact that Allied Intelligence has cracked
+                    the enemy's fabled Enigma code. It is a game, a cryptographic chess match between Waterhouse and his
+                    German counterpart, translated into action by the gung-ho Shaftoe and his forces.Fast-forward to the
+                    present, where Waterhouse's crypto-hacker grandson, Randy, is attempting to create a "data haven" in
+                    Southeast Asia - a place where encrypted data can be stored and exchanged free of repression and
+                    scrutiny. As governments and multinationals attack the endeavor, Randy joins forces with Shaftoe's
+                    tough-as-nails grandaughter, Amy, to secretly salvage a sunken Nazi sumarine that holds the key to
+                    keeping the dream of a data haven afloat. But soon their scheme brings to light a massive conspiracy
+                    with its roots in Detachment 2702 linked to an unbreakable Nazi code called Arethusa. And it will
+                    represent the path to unimaginable riches and a future of personal and digital liberty...or to
+                    universal totalitarianism reborn.A breathtaking tour de force, and Neal Stephenson's most
+                    accomplished and affecting work to date, CRYPTONOMICON is profound and prophetic, hypnotic and
+                    hyper-driven, as it leaps forward and back between World War II and the World Wide Web, hinting all
+                    the while at a dark day-after-tomorrow. It is a work of great art, thought, and creative daring; the
+                    product of a truly icon
+                    <br>
+                    <br>
+                </p>
+
+                <div class="book-infos">
+                    <div class="left">
+                        <span class="label">Categories: </span>
+                        <span class="value">Fiction Science, Fiction Thriller<br></span>
+                        <span class="label">Year: </span>
+                        <span class="value">2002<br></span>
+                        <span class="label">Edition: </span>
+                        <span class="value">1<br></span>
+                        <span class="label">Language: </span>
+                        <span class="value">English</span>
+                    </div>
+                    <div class="right">
+                        <span class="label">Pages: </span>
+                        <span class="value">573<br></span>
+                        <span class="label">ISBN 10: </span>
+                        <span class="value">0060512806<br></span>
+                        <span class="label">ISBN 13: </span>
+                        <span class="value">9780060512804<br></span>
+                        <span class="label">ISBN: </span>
+                        <span class="value">0060512806,9780060575502,9780060512804</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-nav">
+
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+
+            <div class="about-us">
+                <a href="/footer.html#about-us">
+                    <h4>ABOUT US</h4>
+                </a>
+                <p>
+                    I'm Le Nguyen Khoi, a student of the RMIT University and currently taking Web Development
+                    course.
+                </p>
+            </div>
+
+            <div class="useful-links">
+                <h4>USEFUL LINKS</h4>
+
+                <a href="/footer.html#about-us">
+                    <p>About Us</p>
+                </a>
+
+                <a href="/footer.html#privacy-policy">
+                    <p>Privacy Policy</p>
+                </a>
+
+                <a href="/footer.html#terms">
+                    <p>Terms</p>
+                </a>
+
+                <a href="/footer.html#copyright">
+                    <p>Copyright</p>
+                </a>
+
+                <a href="/contact.html">
+                    <p>Contact Us</p>
+                </a>
+
+            </div>
+
+            <div class="contact-us">
+                <a href="/contact.html">
+                    <h4>CONTACT US</h4>
+                </a>
+                <p>Address (RMIT SGS): 702, Nguyễn Văn Linh, Tân Hưng, Quận 7, TP.HCM</p>
+                <p>Email: s3975162@rmit.edu.vn</p>
+                <p>Phone: +84 90 275 1171</p>
+            </div>
+
+        </section>
+
+        <section class="copyright">
+            <a href="/footer.html#copyright">
+                <h4>Copyright © 2023 Le Nguyen Khoi at RMIT Vietnam</h4>
+            </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

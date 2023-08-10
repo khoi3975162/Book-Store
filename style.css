@@ -1,0 +1,948 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Nguyen Khoi
+ID: 3975162
+Acknowledgement: Acknowledge the resources that you use here. */
+
+html {
+    background-color: #F6F4EB;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: auto;
+    padding: auto;
+    font-family: sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* header navigation bar */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px #d89844;
+    background: #91C8E4;
+    top: 0;
+    left: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header .default-nav {
+    display: flex;
+    width: 100%;
+}
+
+header nav .logo img {
+    width: 60px;
+    margin: 8px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav li {
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 120%;
+}
+
+header nav li a {
+    color: white;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+header nav li a:hover {
+    color: #fdd49e;
+}
+
+
+/* categories */
+.main-page {
+    margin-top: 100px;
+}
+
+.category {
+    position: static;
+    width: 100%;
+    animation: flyin 0.75s;
+    margin-bottom: 100px;
+}
+
+.category .book-category {
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.category .book-category:hover {
+    color: #749BC2;
+    text-decoration: underline;
+}
+
+.category .book-subcategory {
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.category .book-subcategory:hover {
+    color: #749BC2;
+}
+
+.category .view-more {
+    color: black;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.category .view-more:hover {
+    color: #749BC2;
+    text-decoration: underline;
+}
+
+.category .book-cards {
+    border-spacing: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category .book-cards .book-card {
+    width: 325px;
+    height: 475px;
+    text-align: center;
+    border: 2px solid #749BC2;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    transition: 0.25s;
+}
+
+.category .book-cards .book-card:hover {
+    box-shadow: 0 0 10px #fdd49e;
+}
+
+.category .book-cards .book-card img {
+    width: 150px;
+    height: 230px;
+}
+
+.category .book-cards .book-card .book-info h2 {
+    margin: 12px;
+}
+
+.category .book-cards .book-card .book-info .book-title-link {
+    color: black;
+    transition: 0.25s;
+}
+
+.category .book-cards .book-card .book-info .book-title-link:hover {
+    color: #749BC2;
+    text-decoration: underline;
+}
+
+.category .book-cards .book-card .book-info .author {
+    color: #919191;
+}
+
+.category .book-cards .book-card .book-info .price {
+    margin-top: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.category .book-cards .book-card .book-info .learn-more-btn {
+    padding: 8px 20px;
+    color: black;
+    background-color: #91C8E4;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+.category .book-cards .book-card .book-info .learn-more-btn:hover {
+    background-color: #749BC2;
+    color: white;
+}
+
+.rich-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: flyin 0.75s;
+    margin: 0;
+}
+
+.rich-media h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: 0.25s;
+}
+
+.rich-media h2:hover {
+    color: #749BC2;
+}
+
+.rich-media .video,
+.rich-media .map {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.rich-media .video:hover,
+.rich-media .map:hover {
+    box-shadow: 0 0 10px #fdd49e;
+}
+
+.rich-media video,
+.rich-media iframe {
+    transition: 0.25s;
+}
+
+.rich-media video:hover,
+.rich-media iframe:hover {
+    box-shadow: 0 0 10px #749BC2;
+}
+
+
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #4682A9;
+    padding: 50px 0 0 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: black;
+    transition: 0.25s;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    line-height: 2;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+footer .footer-nav .logo,
+footer .footer-nav .about-us,
+footer .footer-nav .useful-links,
+footer .footer-nav .contact-us {
+    height: 100%;
+}
+
+footer .logo img {
+    width: 35%;
+    margin-left: 50px;
+}
+
+footer section.copyright {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #888;
+    text-align: center;
+}
+
+
+
+/* book page */
+.book-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: flyin 0.75s;
+    margin-top: 100px;
+    max-width: 100%;
+}
+
+/* breadcrumb */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 50%;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    transition: 0.25s;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* contain images, price, and cart button */
+.book-detail-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+/* images on book detail page */
+.book-detail-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-img img {
+    height: 500px;
+    border: 2px solid #91C8E4;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.main-img img:hover {
+    border-color: #749BC2;
+}
+
+.sub-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.sub-imgs img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #91C8E4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.sub-imgs img:hover {
+    border-color: #749BC2;
+}
+
+/* image modal */
+.img-modal {
+    display: flex;
+    position: fixed;
+    background-color: rgb(145, 200, 228, 0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+
+.img-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.img-modal img {
+    max-width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.modal-close {
+    color: black;
+    background-color: #749BC2;
+    padding: 5px 3px 3px 3px;
+    width: 42px;
+    height: 40px;
+    font-size: 200%;
+    position: absolute;
+    text-align: center;
+    right: 35px;
+    top: 18px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.modal-close:after {
+    content: "\00d7";
+}
+
+.modal-close:hover {
+    color: white;
+}
+
+.img-modal .next {
+    font-size: 400%;
+    color: black;
+    transition: 0.25s;
+}
+
+.img-modal .next:hover {
+    color: white;
+}
+
+/* price and cart button */
+.book-detail-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-detail-right .book-price {
+    font-size: 200%;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.book-detail-right .book-price:hover {
+    color: #749BC2;
+}
+
+.book-detail-right button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: black;
+    background-color: #91C8E4;
+    border-radius: 15px;
+    border: none;
+    font-size: 100%;
+    transition: 0.25s;
+}
+
+.book-detail-right button:hover {
+    background-color: #749BC2;
+    color: white;
+}
+
+/* book name, author and description */
+.book-detail-bottom {
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.book-detail-bottom .book-author {
+    color: #888;
+    font-weight: 540;
+}
+
+.book-detail-bottom .book-infos {
+    text-align: start;
+    display: flex;
+}
+
+.book-detail-bottom .book-infos .label {
+    color: #888;
+}
+
+
+
+/* contact page */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.contact-page h1 {
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
+    animation: flyin 0.75s;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 17px;
+    white-space: nowrap;
+    background-image: url("/images/bookstore-backdrop.jpg");
+    background-size: cover;
+    background-position: left;
+    /* display: flex;
+    justify-content: center;
+    width: 60%; */
+}
+
+.contact-form .form-left {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    line-height: 30px;
+    display: block;
+}
+
+.contact-form h2 {
+    padding: 20px 20px 0 20px;
+    font-weight: normal;
+}
+
+.contact-form h2,
+.contact-page h1 {
+    color: black;
+    transition: 0.25s;
+}
+
+.contact-form h2:hover,
+.contact-page h1:hover {
+    color: #749BC2;
+}
+
+.contact-form form {
+    padding: 20px;
+}
+
+.contact-form .input-text {
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #91C8E4;
+    border-radius: 5px;
+    text-indent: 8px;
+    transition: 0.25s;
+}
+
+.contact-form .input-text:focus,
+.contact-form .input-text:hover {
+    outline: none;
+    background-color: #749BC2;
+    color: white;
+}
+
+.contact-form .contact-purpose select {
+    width: 101.5%;
+}
+
+.contact-form .label-text {
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.contact-form .contact-infos {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form .email-phone input {
+    width: 90%;
+}
+
+.contact-form .contact-pref .label-text {
+    margin-top: -6px;
+    margin-bottom: 6px;
+}
+
+.contact-form .contact-pref .checkbox.email {
+    display: block;
+}
+
+.contact-form .contact-pref .checkbox.phone {
+    display: block;
+    margin-top: 42px;
+}
+
+.contact-form .checkboxes input {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-top: 5px;
+}
+
+.contact-form .checkboxes .checkbox-value {
+    margin-left: 25px;
+    transition: 0.25s;
+}
+
+.contact-form .checkboxes .checkbox-value:hover {
+    color: #749BC2;
+}
+
+.contact-form .note textarea {
+    height: 100px;
+}
+
+.contact-form .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.contact-form .buttons button {
+    border: none;
+    padding: 8px 20px;
+    color: black;
+    background-color: #91C8E4;
+    border-radius: 15px;
+    align-self: bottom;
+    transition: 0.25s;
+}
+
+.contact-form .buttons button:hover {
+    background-color: #749BC2;
+    color: white;
+}
+
+
+
+/* footer page */
+.footer-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-page h1 {
+    color: black;
+    padding: 10px 0 10px 0;
+    transition: 0.25s;
+    font-size: 200%;
+}
+
+.footer-page a {
+    color: #91C8E4;
+    transition: 0.25s;
+}
+
+.footer-page h1:hover,
+.footer-page a:hover {
+    color: #749BC2;
+}
+
+.footer-page a:hover {
+    text-decoration: underline;
+}
+
+.footer-page section {
+    max-width: 50%;
+    padding-top: 100px;
+    margin-bottom: -100px;
+    animation: flyin 0.75s;
+}
+
+.footer-page section.contact-us {
+    margin-bottom: 0;
+}
+
+.footer-page div.content {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    line-height: 2;
+    text-align: start;
+}
+
+
+
+/* Small and Mobile Screens */
+.mobile-nav-icon {
+    display: none;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 4px 5px 6px 5px;
+    font-size: 30px;
+    background-color: #4682A9;
+    border-radius: 10px;
+    color: black;
+    margin-right: 10px;
+}
+
+.mobile-nav {
+    display: inline-grid;
+    flex-direction: column;
+    position: fixed;
+    background-color: #4682A9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+
+.mobile-nav a:first-child {
+    color: black;
+    font-size: 30px;
+}
+
+.mobile-nav a:first-child:hover {
+    color: white;
+}
+
+.mobile-nav a {
+    color: white;
+    font-size: 300%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav a:hover {
+    color: black;
+}
+
+.mobile-nav a:nth-child(3),
+.mobile-nav a:nth-child(5) {
+    background-color: #749BC2;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+        position: relative;
+        right: 25px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .default-nav {
+        width: 90%;
+        display: block;
+    }
+
+    header nav .logo img {
+        margin-left: 20px;
+    }
+
+    .img-modal img {
+        max-width: 87%;
+        height: auto;
+    }
+
+    .img-modal .next {
+        font-size: 200%;
+    }
+
+    .modal-close {
+        padding: 4px 5px 6px 5px;
+    }
+
+    .category .book-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category .book-cards .book-card {
+        font-size: 125%;
+    }
+
+    ul.breadcrumb {
+        max-width: 85%;
+    }
+
+    .book-detail-top {
+        grid-template-columns: none;
+    }
+
+    .book-detail-left {
+        flex-direction: column;
+    }
+
+    .book-detail {
+        max-width: 90%;
+        font-size: 125%;
+    }
+
+    .main-img img {
+        width: auto;
+        height: auto;
+    }
+
+    .sub-imgs {
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .sub-imgs img {
+        margin: 20px;
+    }
+
+    .book-detail-bottom {
+        line-height: 30px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        grid-template-columns: none;
+    }
+
+    .footer-page section {
+        max-width: 90%;
+    }
+
+    footer .logo img {
+        display: none;
+    }
+
+    footer .footer-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-nav .useful-links {
+        margin: 30px 0 30px 0;
+    }
+
+    .rich-media {
+        flex-direction: column;
+    }
+
+    .rich-media .video video,
+    .rich-media .map iframe {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+/* Medium and Tablet Screens */
+@media (min-width: 768px) and (max-width: 992px) {
+    .category .book-cards .book-card {
+        font-size: 120%;
+    }
+
+    ul.breadcrumb {
+        max-width: 85%;
+    }
+
+    .book-detail {
+        max-width: 90%;
+        font-size: 120%;
+    }
+
+    .book-detail-top {
+        grid-template-columns: none;
+    }
+
+    .book-detail-right {
+        margin-top: 30px;
+    }
+}
+
+
+
+/* Large and Desktop/Laptop Screens */
+@media (min-width: 992px) and (max-width: 1450px) {
+    .category .book-cards .book-card {
+        font-size: 115%;
+    }
+
+    ul.breadcrumb {
+        max-width: 75%;
+    }
+
+    .book-detail {
+        max-width: 80%;
+        font-size: 115%;
+    }
+}
+
+
+
+/* some fix */
+@media (min-width: 768px) and (max-width: 1450px) {
+    .contact-form {
+        max-width: 70%;
+        grid-template-columns: none;
+    }
+
+    .footer-page section {
+        max-width: 70%;
+    }
+
+    .rich-media {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 418px) {
+    /* header {
+        display: none;
+    } */
+}
+
+
+
+/* animation */
+@keyframes flyin {
+    0% {
+        transform: translateY(25%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

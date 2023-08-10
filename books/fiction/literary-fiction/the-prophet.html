@@ -1,0 +1,249 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Nguyen Khoi
+ID: 3975162
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Prophet | Book Store</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .mobile-nav,
+        .img-modal {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="default-nav">
+
+                <a href="/index.html" class="logo">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/books/fiction/fiction.html">Fiction</a></li>
+                    <li><a href="/books/non-fiction/non-fiction.html">Non-Fiction</a></li>
+                    <li><a href="/footer.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+            <a href="#open-mobile-nav">
+                <div class="mobile-nav-icon">☰</div>
+            </a>
+
+            <div id="open-mobile-nav" class="mobile-nav">
+                <a href="#" class="modal-close"></a>
+                <a href="/index.html">Home</a>
+                <a href="/books/fiction/fiction.html">Fiction</a>
+                <a href="/books/non-fiction/non-fiction.html">Non-Fiction</a>
+                <a href="/footer.html">About Us</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="book-page">
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/fiction/fiction.html">Fiction</a></li>
+            <li><a href="/books/fiction/fiction.html">Literary Fiction</a></li>
+            <li>The Prophet</li>
+        </ul>
+
+        <section class="book-detail">
+
+            <div class="book-detail-top">
+
+                <div class="book-detail-left">
+                    <a href="#open-modal-0" class="main-img">
+                        <img src="/images/fiction/literary-fiction/the-prophet/book-cover-the-prophet.webp"
+                            alt="book-cover-the-prophet">
+                    </a>
+
+                    <div class="sub-imgs">
+                        <a href="#open-modal-1">
+                            <img src="/images/fiction/literary-fiction/the-prophet/1.png" alt="the-prophet-preview1">
+                        </a>
+                        <a href="#open-modal-2">
+                            <img src="/images/fiction/literary-fiction/the-prophet/2.png" alt="the-prophet-preview2">
+                        </a>
+                        <a href="#open-modal-3">
+                            <img src="/images/fiction/literary-fiction/the-prophet/3.png" alt="the-prophet-preview3">
+                        </a>
+                    </div>
+
+                    <div id="open-modal-0" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-3" class="next left">◀</a>
+                        <img src="/images/fiction/literary-fiction/the-prophet/book-cover-the-prophet.webp"
+                            alt="book-cover-the-prophet">
+                        <a href="#open-modal-1" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-1" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-0" class="next left">◀</a>
+                        <img src="/images/fiction/literary-fiction/the-prophet/1.png" alt="the-prophet-preview1">
+                        <a href="#open-modal-2" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-2" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-1" class="next left">◀</a>
+                        <img src="/images/fiction/literary-fiction/the-prophet/2.png" alt="the-prophet-preview2">
+                        <a href="#open-modal-3" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-3" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-2" class="next left">◀</a>
+                        <img src="/images/fiction/literary-fiction/the-prophet/3.png" alt="the-prophet-preview3">
+                        <a href="#open-modal-0" class="next right">▶</a>
+                    </div>
+                </div>
+
+                <div class="book-detail-right">
+                    <span class="book-price">$ 19.99</span>
+                    <button type="button" class="add-cart-btn">ADD TO CART</button>
+                </div>
+
+            </div>
+
+            <div class="book-detail-bottom">
+
+                <h2 class="book-name">The Prophet</h2>
+
+                <br>
+
+                <h3 class="book-author">by Kahlil Gibran</h3>
+
+                <p class="book-description">
+                    <br>
+                    THE PROPHET is a book of 26 prose poetry essays written in English by the Lebanese artist,
+                    philosopher and writer Kahlil Gibran. It was originally published in 1923 by Alfred A. Knopf. It is
+                    Gibran's best known work. The Prophet has been translated into over 40 different languages and has
+                    never been out of print. The prophet, Almustafa, has lived in the foreign city of Orphalese for 12
+                    years and is about to board a ship which will carry him home. He is stopped by a group of people,
+                    with whom he discusses topics such as life and the human condition. The book is divided into
+                    chapters dealing with love, marriage, children, giving, eating and drinking, work, joy and sorrow,
+                    houses, clothes, buying and selling, crime and punishment, laws, freedom, reason and passion, pain,
+                    self-knowledge, teaching, friendship, talking, time, good and evil, prayer, pleasure, beauty,
+                    religion, and death.
+                    <br>
+                    <br>
+                </p>
+
+                <div class="book-infos">
+                    <div class="left">
+                        <span class="label">Categories:</span>
+                        <span class="value">Fiction, Literary Fiction, Spiritual Fiction, Philosophical
+                            Fiction<br></span>
+                        <span class="label">Year:</span>
+                        <span class="value">2011<br></span>
+                        <span class="label">Edition:</span>
+                        <span class="value">1<br></span>
+                        <span class="label">Publisher:</span>
+                        <span class="value">Knopf Doubleday Publishing Group</span>
+                    </div>
+                    <div class="right">
+                        <span class="label">Language:</span>
+                        <span class="value">English<br></span>
+                        <span class="label">Pages:</span>
+                        <span class="value">107<br></span>
+                        <span class="label">ISBN 13:</span>
+                        <span class="value">9780307957733<br></span>
+                        <span class="label">ISBN:</span>
+                        <span class="value">9780307957733</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-nav">
+
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+
+            <div class="about-us">
+                <a href="/footer.html#about-us">
+                    <h4>ABOUT US</h4>
+                </a>
+                <p>
+                    I'm Le Nguyen Khoi, a student of the RMIT University and currently taking Web Development
+                    course.
+                </p>
+            </div>
+
+            <div class="useful-links">
+                <h4>USEFUL LINKS</h4>
+
+                <a href="/footer.html#about-us">
+                    <p>About Us</p>
+                </a>
+
+                <a href="/footer.html#privacy-policy">
+                    <p>Privacy Policy</p>
+                </a>
+
+                <a href="/footer.html#terms">
+                    <p>Terms</p>
+                </a>
+
+                <a href="/footer.html#copyright">
+                    <p>Copyright</p>
+                </a>
+
+                <a href="/contact.html">
+                    <p>Contact Us</p>
+                </a>
+
+            </div>
+
+            <div class="contact-us">
+                <a href="/contact.html">
+                    <h4>CONTACT US</h4>
+                </a>
+                <p>Address (RMIT SGS): 702, Nguyễn Văn Linh, Tân Hưng, Quận 7, TP.HCM</p>
+                <p>Email: s3975162@rmit.edu.vn</p>
+                <p>Phone: +84 90 275 1171</p>
+            </div>
+
+        </section>
+
+        <section class="copyright">
+            <a href="/footer.html#copyright">
+                <h4>Copyright © 2023 Le Nguyen Khoi at RMIT Vietnam</h4>
+            </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

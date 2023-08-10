@@ -1,0 +1,227 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Nguyen Khoi
+ID: 3975162
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Book Store</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .mobile-nav {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="default-nav">
+
+                <a href="/index.html" class="logo">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/books/fiction/fiction.html">Fiction</a></li>
+                    <li><a href="/books/non-fiction/non-fiction.html">Non-Fiction</a></li>
+                    <li><a href="/footer.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+            <a href="#open-mobile-nav">
+                <div class="mobile-nav-icon">☰</div>
+            </a>
+
+            <div id="open-mobile-nav" class="mobile-nav">
+                <a href="#" class="modal-close"></a>
+                <a href="/index.html">Home</a>
+                <a href="/books/fiction/fiction.html">Fiction</a>
+                <a href="/books/non-fiction/non-fiction.html">Non-Fiction</a>
+                <a href="/footer.html">About Us</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="contact-page">
+
+        <h1 class="contact-us-h">Contact Us</h1>
+
+        <section class="contact-form">
+
+            <div class="form-left">
+
+                <h2 class="contact-us-h">Get in touch</h2>
+
+                <form method="post">
+
+                    <label class="contact-purpose">
+                        <div class="label-text">CONTACT PURPOSE</div>
+                        <select class="input-text" required>
+                            <option name="sell" id="sell" value="sell">I want to sell books</option>
+                            <option name="buy" id="buy" value="buy">I want to buy books</option>
+                        </select>
+                    </label>
+
+                    <label class="name">
+                        <div class="label-text">FULL NAME</div>
+                        <input type="text" class="input-text" name="name" id="name" placeholder="Name" required>
+                    </label>
+
+
+                    <div class="contact-infos">
+
+                        <div class="email-phone">
+
+                            <label>
+                                <div class="label-text">EMAIL ADDRESS</div>
+                                <input type="email" class="input-text" name="email" id="email" placeholder="Email"
+                                    required>
+                            </label>
+
+                            <br>
+
+                            <label>
+                                <div class="label-text">PHONE NUMBER</div>
+                                <input type="tel" class="input-text" name="phone" id="phone" placeholder="Phone"
+                                    required>
+                            </label>
+
+                        </div>
+
+                        <div class="contact-pref">
+
+                            <div class="checkboxes">
+                                <div class="label-text">CONTACT PREFERENCE</div>
+
+                                <label class="checkbox email">
+                                    <input type="checkbox" name="email" id="phone" value="email">
+                                    <div class="checkbox-value">By email</div>
+                                </label>
+
+                                <label class="checkbox phone">
+                                    <input type="checkbox" name="phone" id="phone" value="phone">
+                                    <div class="checkbox-value">By phone</div>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="checkboxes">
+                        <div class="label-text">RECEIVE WEEKLY NEWSLETTER</div>
+
+                        <label class="checkbox yes">
+                            <input type="checkbox" name="yes" id="yes" value="yes" checked>
+                            <div class="checkbox-value">Yes</div>
+                        </label>
+
+                        <label class="checkbox no">
+                            <input type="checkbox" name="no" id="no" value="no">
+                            <div class="checkbox-value">No</div>
+                        </label>
+                    </div>
+
+                    <label class="note">
+                        <span class="label-text">EXTRA NOTES</span>
+                        <br>
+                        <textarea class="input-text" name="note" id="note" placeholder="Note"></textarea>
+                    </label>
+
+                    <div class="buttons">
+                        <button type="button">SUBMIT</button>
+                        <button type="reset">RESET</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-nav">
+
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+
+            <div class="about-us">
+                <a href="/footer.html#about-us">
+                    <h4>ABOUT US</h4>
+                </a>
+                <p>
+                    I'm Le Nguyen Khoi, a student of the RMIT University and currently taking Web Development
+                    course.
+                </p>
+            </div>
+
+            <div class="useful-links">
+                <h4>USEFUL LINKS</h4>
+
+                <a href="/footer.html#about-us">
+                    <p>About Us</p>
+                </a>
+
+                <a href="/footer.html#privacy-policy">
+                    <p>Privacy Policy</p>
+                </a>
+
+                <a href="/footer.html#terms">
+                    <p>Terms</p>
+                </a>
+
+                <a href="/footer.html#copyright">
+                    <p>Copyright</p>
+                </a>
+
+                <a href="/contact.html">
+                    <p>Contact Us</p>
+                </a>
+
+            </div>
+
+            <div class="contact-us">
+                <a href="/contact.html">
+                    <h4>CONTACT US</h4>
+                </a>
+                <p>Address (RMIT SGS): 702, Nguyễn Văn Linh, Tân Hưng, Quận 7, TP.HCM</p>
+                <p>Email: s3975162@rmit.edu.vn</p>
+                <p>Phone: +84 90 275 1171</p>
+            </div>
+
+        </section>
+
+        <section class="copyright">
+            <a href="/footer.html#copyright">
+                <h4>Copyright © 2023 Le Nguyen Khoi at RMIT Vietnam</h4>
+            </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</htm

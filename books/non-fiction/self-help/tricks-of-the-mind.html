@@ -1,0 +1,267 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Nguyen Khoi
+ID: 3975162
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tricks of the Mind | Book Store</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .mobile-nav,
+        .img-modal {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="default-nav">
+
+                <a href="/index.html" class="logo">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/books/fiction/fiction.html">Fiction</a></li>
+                    <li><a href="/books/non-fiction/non-fiction.html">Non-Fiction</a></li>
+                    <li><a href="/footer.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+            <a href="#open-mobile-nav">
+                <div class="mobile-nav-icon">☰</div>
+            </a>
+
+            <div id="open-mobile-nav" class="mobile-nav">
+                <a href="#" class="modal-close"></a>
+                <a href="/index.html">Home</a>
+                <a href="/books/fiction/fiction.html">Fiction</a>
+                <a href="/books/non-fiction/non-fiction.html">Non-Fiction</a>
+                <a href="/footer.html">About Us</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="book-page">
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/books/non-fiction/non-fiction.html">Non-Fiction</a></li>
+            <li><a href="/books/non-fiction/non-fiction.html">Self-help</a></li>
+            <li>Tricks of the Mind</li>
+        </ul>
+
+        <section class="book-detail">
+
+            <div class="book-detail-top">
+
+                <div class="book-detail-left">
+                    <a href="#open-modal-0" class="main-img">
+                        <img src="/images/non-fiction/self-help/tricks-of-the-mind/book-cover-tricks-of-the-mind.webp"
+                            alt="book-cover-tricks-of-the-mind">
+                    </a>
+
+                    <div class="sub-imgs">
+                        <a href="#open-modal-1">
+                            <img src="/images/non-fiction/self-help/tricks-of-the-mind/1.png"
+                                alt="tricks-of-the-mind-preview1">
+                        </a>
+                        <a href="#open-modal-2">
+                            <img src="/images/non-fiction/self-help/tricks-of-the-mind/2.png"
+                                alt="tricks-of-the-mind-preview2">
+                        </a>
+                        <a href="#open-modal-3">
+                            <img src="/images/non-fiction/self-help/tricks-of-the-mind/3.png"
+                                alt="tricks-of-the-mind-preview3">
+                        </a>
+                    </div>
+
+                    <div id="open-modal-0" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-3" class="next left">◀</a>
+                        <img src="/images/non-fiction/self-help/tricks-of-the-mind/book-cover-tricks-of-the-mind.webp"
+                            alt="book-cover-tricks-of-the-mind">
+                        <a href="#open-modal-1" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-1" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-0" class="next left">◀</a>
+                        <img src="/images/non-fiction/self-help/tricks-of-the-mind/1.png"
+                            alt="tricks-of-the-mind-preview1">
+                        <a href="#open-modal-2" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-2" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-1" class="next left">◀</a>
+                        <img src="/images/non-fiction/self-help/tricks-of-the-mind/2.png"
+                            alt="tricks-of-the-mind-preview2">
+                        <a href="#open-modal-3" class="next right">▶</a>
+                    </div>
+
+                    <div id="open-modal-3" class="img-modal">
+                        <a href="#" class="modal-close"></a>
+                        <a href="#open-modal-2" class="next left">◀</a>
+                        <img src="/images/non-fiction/self-help/tricks-of-the-mind/3.png"
+                            alt="tricks-of-the-mind-preview3">
+                        <a href="#open-modal-0" class="next right">▶</a>
+                    </div>
+                </div>
+
+                <div class="book-detail-right">
+                    <span class="book-price">$ 14.99</span>
+                    <button type="button" class="add-cart-btn">ADD TO CART</button>
+                </div>
+
+            </div>
+
+            <div class="book-detail-bottom">
+
+                <h2 class="book-name">Tricks of the Mind</h2>
+
+                <br>
+
+                <h3 class="book-author">by Derren Brown</h3>
+
+                <p class="book-description">
+                    <br>
+                    The definitive book by Britain's favourite illusionist... Derren Brown's television and stage
+                    performances have entranced and dumbfounded millions. His baffling illusions and stunning set pieces
+                    - such as The Séance, Russian Roulette and The Heist - have set new standards of what's possible, as
+                    well as causing more than their fair share of controversy. Now, for the first time, he reveals the
+                    secrets behind his craft, what makes him tick and just why he grew that beard. Tricks of the Mind
+                    takes you on a journey into the structure and psychology of magic. Derren also takes a long hard
+                    look at the paranormal industry, and looks at why some of us feel the need to believe in it in the
+                    first place. Alternately hilarious, controversial and challenging, Tricks of the Mind is essential
+                    reading for Derren's legions of fans, and pretty bloody irresistible even for those who don't like
+                    him that much... Derren was born in 1971 in Croydon. It was a difficult birth - his mother was in
+                    Devon at the time. A precocious and puzzling only child, he liked to paint, foster obsessive habits
+                    and once set fire to a neighbour's boat by accident. Derren went on to study Law and German at
+                    Bristol University and fell in love with the city. This was a time when marriage between man and
+                    city was still frowned upon, so rather than face public derision Derren decided just to live there
+                    forever instead. During this time he began to perform magic in bars and restaurants, and gave
+                    occasional hypnosis shows. Then in 1999 he was asked by Channel 4 to put a mind-reading programme
+                    together for television, which became Derren Brown: Mind Control. Mind Controls 2 and 3 followed and
+                    then, in October 2003, Derren caused an international furore by playing Russian Roulette live on
+                    television. This secured his notoriety with the public and a big apartment in London. Further
+                    specials have followed - Derren Brown: The Seance was the most complained about show in the history
+                    of television. He still receives several letters of complaint a week from psychics and Christians.
+                    He is sensitive to everyone's objections but knows at least the latter group will forgive him.
+                    Derren lives in London with a large collection of taxidermy and a fatalistic parrot.
+                    <br>
+                    <br>
+                </p>
+
+                <div class="book-infos">
+                    <div class="left">
+                        <span class="label">Categories: </span>
+                        <span class="value">Self-help, Psychology Cognitive, Psychology Neuroscience Science<br></span>
+                        <span class="label">Year: </span>
+                        <span class="value">2007<br></span>
+                        <span class="label">Publisher: </span>
+                        <span class="value">Channel 4 Books<br></span>
+                        <span class="label">Language: </span>
+                        <span class="value">English</span>
+                    </div>
+                    <div class="right">
+                        <span class="label">Pages: </span>
+                        <span class="value">392<br></span>
+                        <span class="label">ISBN 10: </span>
+                        <span class="value">1905026358<br></span>
+                        <span class="label">ISBN 13: </span>
+                        <span class="value">9781905026357<br></span>
+                        <span class="label">ISBN: </span>
+                        <span class="value">9781905026357,1905026358</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-nav">
+
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+
+            <div class="about-us">
+                <a href="/footer.html#about-us">
+                    <h4>ABOUT US</h4>
+                </a>
+                <p>
+                    I'm Le Nguyen Khoi, a student of the RMIT University and currently taking Web Development
+                    course.
+                </p>
+            </div>
+
+            <div class="useful-links">
+                <h4>USEFUL LINKS</h4>
+
+                <a href="/footer.html#about-us">
+                    <p>About Us</p>
+                </a>
+
+                <a href="/footer.html#privacy-policy">
+                    <p>Privacy Policy</p>
+                </a>
+
+                <a href="/footer.html#terms">
+                    <p>Terms</p>
+                </a>
+
+                <a href="/footer.html#copyright">
+                    <p>Copyright</p>
+                </a>
+
+                <a href="/contact.html">
+                    <p>Contact Us</p>
+                </a>
+
+            </div>
+
+            <div class="contact-us">
+                <a href="/contact.html">
+                    <h4>CONTACT US</h4>
+                </a>
+                <p>Address (RMIT SGS): 702, Nguyễn Văn Linh, Tân Hưng, Quận 7, TP.HCM</p>
+                <p>Email: s3975162@rmit.edu.vn</p>
+                <p>Phone: +84 90 275 1171</p>
+            </div>
+
+        </section>
+
+        <section class="copyright">
+            <a href="/footer.html#copyright">
+                <h4>Copyright © 2023 Le Nguyen Khoi at RMIT Vietnam</h4>
+            </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
