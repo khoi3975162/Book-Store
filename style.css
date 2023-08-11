@@ -513,7 +513,7 @@ ul.breadcrumb li a:hover {
     border-radius: 15px;
     margin-top: 17px;
     white-space: nowrap;
-    background-image: url("./images/bookstore-backdrop.jpg");
+    background-image: url("images/bookstore-backdrop.jpg");
     background-size: cover;
     background-position: left;
     /* display: flex;
